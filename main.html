@@ -1,16 +1,62 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest-like Hero Section</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
 
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('your-image-url.jpg') center/cover no-repeat; /* Replace 'your-image-url.jpg' with your actual image URL */
+            color: #fff;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 600px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .explore-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e60023;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Your Hero Title</h1>
+            <p>Your hero description goes here. Use this space to provide a brief introduction or call to action.</p>
+            <a href="#" class="explore-button">Explore Now</a>
+        </div>
+    </div>
 
 </body>
-
 </html>
