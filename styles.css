@@ -1,1 +1,30 @@
+/* Add your custom styles here */
+
+/* Center the modal vertically */
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Customize modal header */
+.modal-header {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: #fff;
+}
+
+/* Customize modal body */
+.modal-body {
+  padding: 20px;
+}
+
+/* Customize modal footer */
+.modal-footer {
+  background-color: #f8f9fa; /* Bootstrap background color */
+}
+
+/* Optional: Customize close button */
+.btn-close {
+  color: #fff; /* Change close button color */
+}
 
