@@ -1,63 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pinterest-like Hero Section</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Arial', sans-serif;
-        }
-
-        .hero {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: url('your-image-url.jpg') center/cover no-repeat; /* Replace 'your-image-url.jpg' with your actual image URL */
-            color: #fff;
-            text-align: center;
-        }
-
-        .hero-content {
-            max-width: 600px;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.7);
-            border-radius: 10px;
-        }
-
-        .hero h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-
-        .hero p {
-            font-size: 1.2em;
-            margin-bottom: 20px;
-        }
-
-        .explore-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #e60023;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iKu1rHN/JL8t7fyUqZ6EnQcPz1GiF8e7nv1R6hBqDjpvS8C5V6t9S6" crossorigin="anonymous">
+  <title>Bootstrap Modal Example</title>
 </head>
 <body>
 
-    <div class="hero">
-        <div class="hero-content">
-            <h1>Your Hero Title</h1>
-            <p>Your hero description goes here. Use this space to provide a brief introduction or call to action.</p>
-            <a href="#" class="explore-button">Explore Now</a>
-			
-        </div>
-    </div>
+<!-- Button to Open Modal -->
+<button type="button" class="btn btn-primary" id="open-modal" data-bs-toggle="modal" data-bs-target="#newton-modal">
+  Open Modal
+</button>
 
+<!-- Modal -->
+<div class="modal fade" id="newton-modal" tabindex="-1" aria-labelledby="newton-modal-label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="newton-modal-label">New Modal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-eAE6fb3wxyd6/xjEU9VP93J5L1ZVbM2if5ZlM10qCG2sShFv0EBc5ONBLAA02COH" crossorigin="anonymous"></script>
 </body>
 </html>
